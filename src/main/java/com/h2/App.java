@@ -18,7 +18,7 @@ public class App
     private static int add(int[] numbers) {
         var sum = 0;
         for(int number: numbers ) {
-            sum =+ number;
+            sum += number;
         }
         return sum;
     }
