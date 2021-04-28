@@ -28,7 +28,7 @@ public class SavingsCalculator {
         return sum;
     }
 
-    private static int remainingdaynsInMonth(LocalDate date) {
+    private static int remainingDaysInMonth(LocalDate date) {
         YearMonth yearMonth = YearMonth.of(date.getYear(), date.getMonth());
         int totalDaysInMonth = yearMonth.lengthOfMonth();
         int remainingDays = totalDaysInMonth - date.getDayOfMonth();
@@ -56,6 +56,6 @@ public class SavingsCalculator {
 
         final SavingsCalculator calculator = new SavingsCalculator(credits, debits);
         float netSavings = calculator.calculate();
-        System.out.println("Net Savings = " + netSavings + ", remaining days in month = " + remainingdaynsInMonth(LocalDate.now()));
+        System.out.println("Net Savings = " + netSavings + ", remaining days in month = " + remainingDaysInMonth(LocalDate.now()));
     }
 }
